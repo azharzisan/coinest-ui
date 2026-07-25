@@ -8,7 +8,7 @@ import { ArrowRight, ArrowRightUp, Safe } from "reicon-react";
 const Hero = () => {
   return (
     <>
-      <div className="w-full h-screen relative flex justify-center items-center flex-col gap-6 bg-primary border-b border-excep">
+      <div className="w-full h-screen relative flex justify-center items-center flex-col gap-6 bg-primary border-b border-neutral-300">
         <BlurFade delay={0.25} inView className={"z-30"}>
           <ShimmerButton>
             Introducing Orchestration{" "}
@@ -47,14 +47,14 @@ const Hero = () => {
         />
       </div>
 
-      <div className="w-full px-14">
-        <div className="w-full text-center border-x border-b border-excep">
-          <p className="text-lg font-semibold text-excep-dark py-2">
+      <div className="w-full px-6">
+        <div className="w-full text-center border-x border-b border-neutral-300">
+          <p className="text-sm md:text-lg font-semibold text-excep-dark py-2">
             Trusted by 70% of Fortune 500
           </p>
         </div>
-        <div className="w-full flex justify-center items-center divide-x divide-excep border-x border-excep">
-          <div className="w-full flex justify-center items-center py-5 relative">
+        <div className="w-full grid grid-cols-2 grid-rows-2 lg:flex lg:justify-center lg:items-center border-x border-neutral-300">
+          <div className="w-full flex justify-center items-center py-5 relative border-r border-b border-neutral-300 lg:border-b-0">
             <ArrowRightUp
               size={20}
               className="absolute top-2 right-2 text-secondary"
@@ -62,17 +62,17 @@ const Hero = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 222"
-              className="size-10"
+              className="size-6 lg:size-10"
               fill="var(--color-excep-dark)"
             >
               <path d="m128 0l128 221.705H0z" />
             </svg>
           </div>
 
-          <div className="w-full flex justify-center items-center py-5">
+          <div className="w-full flex justify-center items-center py-5 border-b border-neutral-300 lg:border-b-0 lg:border-r">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="size-10"
+              className="size-6 lg:size-10"
               viewBox="0 0 256 250"
             >
               <path
@@ -82,7 +82,7 @@ const Hero = () => {
             </svg>
           </div>
 
-          <div className="w-full flex justify-center items-center py-5 relative">
+          <div className="w-full flex justify-center items-center py-5 relative border-r border-neutral-300">
             <ArrowRightUp
               size={20}
               className="absolute top-2 right-2 text-secondary"
@@ -92,7 +92,7 @@ const Hero = () => {
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              className="size-10"
+              className="size-6 lg:size-10"
             >
               <path d="m5.99,1.62a8.54,8.54 0 0 0 -2.54,6.83c0.35,4.4 4.51,7.99 8.28,7.99c3.5,0 4.88,-3.06 4.54,-5.14a4.32,4.32 0 0 0 -0.95,-2.07c0.63,0.34 1.24,0.77 1.81,1.3c1.52,1.41 2.44,3.23 2.58,5.1c0.33,4.13 -2.73,8.37 -7.85,8.37c-1.69,0 -3.48,-0.43 -4.98,-1.14c-4.06,-1.92 -6.88,-6.06 -6.88,-10.86c0,-4.43 2.41,-8.3 5.99,-10.38zm6.15,-1.62c1.69,0 3.48,0.43 4.98,1.14a12,12 0 0 1 6.88,10.86c0,4.43 -2.41,8.3 -5.99,10.38a8.54,8.54 0 0 0 2.54,-6.83c-0.35,-4.4 -4.51,-7.99 -8.28,-7.99c-3.5,0 -4.88,3.06 -4.54,5.14a4.3,4.3 0 0 0 0.96,2.07a8.72,8.72 0 0 1 -1.81,-1.3c-1.52,-1.41 -2.44,-3.23 -2.59,-5.1c-0.33,-4.13 2.73,-8.37 7.85,-8.37z" />
             </svg>
@@ -101,7 +101,7 @@ const Hero = () => {
           <div className="w-full flex justify-center items-center py-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="size-10"
+              className="size-6 lg:size-10"
               viewBox="0 0 256 176"
             >
               <path
