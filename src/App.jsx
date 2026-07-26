@@ -4,6 +4,7 @@ import Navbar from "./sections/Navbar";
 import Services from "./sections/Services";
 import Sessions from "./sections/Sessions";
 import Backbone from "./sections/Backbone";
+import Earth from "./sections/Earth";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Dash />
           <Sessions />
           <Backbone />
+          <Earth />
         </section>
       </section>
     </>
