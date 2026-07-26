@@ -19,7 +19,7 @@ const Navbar = () => {
           <h2 className="text-xl text-secondary font-semibold">Circle Pay</h2>
         </div>
 
-        <div className="lg:flex bg-primary rounded-xl p-2 hidden justify-center items-center gap-6 text-secondary relative z-20">
+        <div className="lg:flex bg-primary rounded-xl p-1 hidden justify-center items-center gap-3 text-secondary relative z-20">
           <button
             onMouseEnter={() => setProdToggle((prev) => !prev)}
             className="cursor-pointer hover:bg-excep/30 px-3 py-1 rounded-lg"

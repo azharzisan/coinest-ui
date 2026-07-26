@@ -28,7 +28,7 @@ const Hero = () => {
         </BlurFade>
         <BlurFade delay={0.25 * 4} inView className={"z-30"}>
           <div className="flex justify-center items-center gap-4 z-30">
-            <button className="px-3 py-1 bg-primary hover:bg-excep border border-secondary rounded-lg text-secondary cursor-pointer">
+            <button className="px-3 py-1 bg-primary hover:bg-neutral-200 border border-secondary rounded-lg text-secondary cursor-pointer">
               <a href="">Talk to sales</a>
             </button>
             <button className="px-3 py-1 bg-secondary rounded-lg text-primary cursor-pointer">
@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
         </BlurFade>
 
-        <div className="w-full h-full absolute top-0 left-0 z-25 bg-linear-to-t from-transparent to-primary"></div>
+        <div className="w-full h-full absolute top-0 left-0 z-25 bg-linear-to-t from-transparent via-primary to-primary"></div>
         <AnimatedGridPattern
           numSquares={30}
           maxOpacity={0.1}

@@ -30,10 +30,11 @@ const Services = () => {
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-auto border-x border-neutral-300 border-b">
             <div className="w-full h-full p-3 flex flex-col gap-4 border-b border-dashed md:border-r lg:border-b-0 border-neutral-300">
               <div className="">
-                <Mobile size={24} />
+                <Mobile size={24} color="var(--color-excep-dark)" />
               </div>
               <p className="text-lg text-secondary leading-5">
-                Accept and optimise payments globally, online and in person with ease
+                Accept and optimise payments globally, online and in person with
+                ease
               </p>
               <video
                 src="https://videos.stripeassets.com/fzn2n1nzq965/4jrlQ5exP5KRjenpdXFNfU/78465530670e4d2154f2772e453fc167/Terminal_S700_English__UK__Full.mp4"
@@ -45,7 +46,7 @@ const Services = () => {
             </div>
             <div className="w-full h-full p-3 flex flex-col gap-4 border-b border-dashed lg:border-b-0 lg:border-r border-neutral-300">
               <div className="">
-                <Docs size={24} />
+                <Docs size={24} color="var(--color-excep-dark)" />
               </div>
               <p className="text-lg text-secondary leading-5">
                 Enable any billing model whether for saas, paltform or
@@ -61,7 +62,7 @@ const Services = () => {
             </div>
             <div className="w-full h-full p-3 flex flex-col gap-4 border-b border-dashed md:border-b-0 md:border-r border-neutral-300">
               <div className="">
-                <Card size={24} />
+                <Card size={24} color="var(--color-excep-dark)" />
               </div>
               <p className="text-lg text-secondary leading-5">
                 Create a card issuing program for your services and loyality
@@ -77,7 +78,7 @@ const Services = () => {
             </div>
             <div className="w-full h-full p-3 flex flex-col gap-4 border-b md:border-b-0 border-dashed border-neutral-300">
               <div className="">
-                <BitcoinCircle size={24} />
+                <BitcoinCircle size={24} color="var(--color-excep-dark)" />
               </div>
               <p className="text-lg text-secondary leading-5">
                 Access borderless money movement with stablecoins and crypto
