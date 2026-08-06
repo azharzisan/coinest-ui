@@ -7,6 +7,14 @@
 
 @import 'tailwindcss';
 
+@import "tw-animate-css";
+
+@import "shadcn/tailwind.css";
+
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --color-primary: #1E4942;
   --color-secondary: #BCF49D;
