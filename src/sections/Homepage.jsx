@@ -1,6 +1,5 @@
 import AnimatedContent from "@/components/ui/AnimatedContent";
 import Button from "@/components/ui/Button";
-import { GridPattern } from "@/components/ui/grid-pattern";
 import { HexagonPattern } from "@/components/ui/hexagon-pattern";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { cn } from "@/lib/utils";
@@ -62,6 +61,7 @@ const Homepage = () => {
             scale={1}
             threshold={0.1}
             delay={1}
+            className=" flex justify-center items-center flex-col"
           >
             <Button text={"Get Started for Free"} />
             <p className="text-center text-muted text-xs pt-1">
@@ -71,22 +71,36 @@ const Homepage = () => {
         </div>
         <div className="w-full h-125 relative z-30 overflow-hidden">
           <div className="w-full absolute top-0 left-0 pt-15 px-13">
-            <img
-              src="/dash.svg"
-              alt=""
-              className="w-full h-full object-top object-cover border-t-4 border-x-4 rounded-t-3xl border-secondary/40"
-            />
+            <AnimatedContent
+              distance={50}
+              direction="vertical"
+              reverse={false}
+              duration={1}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0.2}
+              className=" flex justify-center items-center flex-col"
+            >
+              <img
+                src="/dash.svg"
+                alt=""
+                className="w-full h-full object-top object-cover border-t-4 border-x-4 rounded-t-3xl border-secondary/40"
+              />
+            </AnimatedContent>
           </div>
         </div>
-        <div className="w-full h-full bg-linear-to-t from-secondary/60 via-secondary/30 via-10% to-transparent absolute bottom-0 left-0"></div>
-          <HexagonPattern
-            radius={40}
-            x={-1}
-            y={-1}
-            className={cn(
-              "mask-[linear-gradient(to_top,white,#ffffff60,transparent)] -z-20",
-            )}
-          />
+        <div className="w-full h-full bg-linear-to-t from-secondary/60 via-secondary/30 via-10% to-transparent absolute bottom-0 left-0 -z-10"></div>
+        <HexagonPattern
+          radius={40}
+          x={-1}
+          y={-1}
+          className={cn(
+            "mask-[linear-gradient(to_top,white,#ffffff60,transparent)] -z-20",
+          )}
+        />
       </div>
     </>
   );
