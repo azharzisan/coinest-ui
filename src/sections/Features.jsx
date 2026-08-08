@@ -51,7 +51,7 @@ const Features = () => {
     <>
       <div className="w-full relative py-10">
         <div className="w-full flex justify-center items-center">
-          <div className="px-3 py-1 bg-linear-to-t from-secondary/40 to-secondary/20 tracking-tighter border-secondary flex justify-center items-center gap-2 border rounded-full text-primary ring-1 ring-background/30 ring-inset text-sm font-semibold">
+          <div className="px-3 py-1 bg-linear-to-t from-secondary/90 to-secondary/40 tracking-tighter border-secondary flex justify-center items-center gap-2 border rounded-full text-primary ring-1 ring-background/30 ring-inset text-sm font-semibold">
             Features
           </div>
         </div>
