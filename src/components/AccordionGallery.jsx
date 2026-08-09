@@ -187,7 +187,7 @@ const AccordionGallery = ({
           <Tag
             key={i}
             ref={el => (panelRefs.current[i] = el)}
-            className="group relative block min-w-0 min-h-0 flex-[1_1_0] cursor-pointer overflow-hidden bg-[#0a0713] no-underline outline-none [transform-style:preserve-3d] [transform-origin:center] [box-shadow:0_10px_30px_-18px_rgba(0,0,0,0.8)] focus-visible:[box-shadow:0_0_0_2px_var(--ag-accent),0_10px_30px_-18px_rgba(0,0,0,0.8)] max-[520px]:min-h-[84px] max-[520px]:!transform-none"
+            className="group relative block min-w-0 min-h-0 flex-[1_1_0] cursor-none overflow-hidden bg-[#0a0713] no-underline outline-none [transform-style:preserve-3d] [transform-origin:center] [box-shadow:0_10px_30px_-18px_rgba(0,0,0,0.8)] focus-visible:[box-shadow:0_0_0_2px_var(--ag-accent),0_10px_30px_-18px_rgba(0,0,0,0.8)] max-[520px]:min-h-[84px] max-[520px]:!transform-none"
             style={{ borderRadius: `${radius}px`, '--ag-accent': accentColor, willChange: 'flex-grow, transform' }}
             href={item.link || undefined}
             onClick={e => handleClick(i, e)}
@@ -211,7 +211,7 @@ const AccordionGallery = ({
                   src={item.image}
                   alt={item.alt || item.label || ''}
                   draggable="false"
-                  className="block h-full w-full select-none object-cover [-webkit-user-drag:none]" />
+                  className="block w-full h-full select-none object-cover [-webkit-user-drag:none]" />
               </span>
               <span
                 className="pointer-events-none absolute inset-0"

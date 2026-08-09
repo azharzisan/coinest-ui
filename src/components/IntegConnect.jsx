@@ -42,7 +42,7 @@ export function IntegConnect({ className }) {
   return (
     <div
       className={cn(
-        "absolute -top-30 left-0 flex w-full items-center justify-center overflow-hidden px-8 py-8",
+        "absolute -top-10 md:-top-30 left-0 flex w-full items-center justify-center overflow-hidden px-6 md:px-8 lg:px-14 py-8",
         className,
       )}
       ref={containerRef}
@@ -50,18 +50,18 @@ export function IntegConnect({ className }) {
       <div className="flex size-full w-full flex-row items-stretch justify-between gap-10">
         <div className="flex flex-col justify-center gap-2 text-primary">
           <Circle ref={div14Ref} className={""}>
-            <ConvertThreeDCube size={24} />
+            <ConvertThreeDCube size={24} className="" />
           </Circle>
           <Circle ref={div10Ref} className={""}>
-            <WalletAlt size={24}/>
+            <WalletAlt size={24} />
           </Circle>
           <Circle ref={div1Ref} className={"pt-1"}>
             <Icons.me />
           </Circle>
-          <Circle ref={div12Ref} className={"pt-1"}>
+          <Circle ref={div12Ref} className={""}>
             <Folder size={24} />
           </Circle>
-          <Circle ref={div13Ref} className={"pt-1"}>
+          <Circle ref={div13Ref}>
             <CardTransfer size={24} />
           </Circle>
         </div>
@@ -75,8 +75,11 @@ export function IntegConnect({ className }) {
             <Icons.client />
           </Circle>
         </div>
-        <div className="flex flex-col justify-center gap-8 lg:gap-3">
-          <Circle ref={div2Ref} className={"p-3 bg-[#F7D91A]"}>
+        <div className="flex flex-col justify-center gap-2 lg:gap-3">
+          <Circle
+            ref={div2Ref}
+            className={"p-3 bg-[#F7D91A]"}
+          >
             <Icons.email />
           </Circle>
           <Circle ref={div3Ref} className={"p-3"}>
@@ -91,7 +94,10 @@ export function IntegConnect({ className }) {
           <Circle ref={div6Ref} className={"p-3"}>
             <Icons.stripe />
           </Circle>
-          <Circle ref={div8Ref} className={"p-3 bg-foreground"}>
+          <Circle
+            ref={div8Ref}
+            className={"p-3 bg-foreground"}
+          >
             <Icons.paddle />
           </Circle>
         </div>
