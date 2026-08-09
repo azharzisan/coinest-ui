@@ -35,11 +35,11 @@ const WhyUs = () => {
             Why Us?
           </div>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-2 px-60 z-30 pt-8">
+        <div className="w-full flex justify-center items-center flex-col gap-2 px-0 md:px-10 lg:px-60 z-30 pt-8">
           <TextAnimate
             animation="slideUp"
             by="word"
-            className="text-5xl text-primary font-semibold text-center"
+            className="text-3xl md:text-4xl lg:text-5xl text-primary font-semibold text-center"
             delay={0.5}
           >
             Confidence Backed by Performance
@@ -48,45 +48,45 @@ const WhyUs = () => {
             animation="fadeIn"
             by="line"
             as="p"
-            className="text-xl text-center text-foreground"
+            className="text-lg lg:text-xl text-center text-foreground"
             delay={0.8}
           >
             Powering smarter financial decisions for individuals and businesses
             around the globe backed by real
           </TextAnimate>
         </div>
-        <div className="w-full flex justify-around items-center pt-20">
-          <div className="w-full flex justify-center items-center flex-col gap-2">
-            <div className="w-full flex justify-center items-center text-7xl">
+        <div className="w-full flex justify-around items-center flex-col md:flex-row gap-10 md:gap-0 pt-20">
+          <div className="w-full flex justify-center items-center flex-col gap-0 md:gap-2">
+            <div className="w-full flex justify-center items-center text-6xl lg:text-7xl">
               <p>$</p>
               <NumberTicker
                 value={125}
-                className=" font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
+                className="font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
               />
               <p>m+</p>
             </div>
-            <h6 className="text-xl font-semibold">Transfered using Coinest</h6>
+            <h6 className="text-lg lg:text-xl font-semibold">Transfered using Coinest</h6>
           </div>
-          <div className="w-full flex justify-center items-center flex-col gap-2">
-            <div className="w-full flex justify-center items-center text-7xl">
+          <div className="w-full flex justify-center items-center flex-col gap-0 md:gap-2">
+            <div className="w-full flex justify-center items-center text-6xl lg:text-7xl">
               <NumberTicker
                 value={92}
-                className=" font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
+                className="font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
               />
               <p>%</p>
             </div>
-            <h6 className="text-xl font-semibold">Current Uptime</h6>
+            <h6 className="text-lg lg:text-xl font-semibold">Current Uptime</h6>
           </div>
-          <div className="w-full flex justify-center items-center flex-col gap-2">
-            <div className="w-full flex justify-center items-center text-7xl">
+          <div className="w-full flex justify-center items-center flex-col gap-0 md:gap-2">
+            <div className="w-full flex justify-center items-center text-6xl lg:text-7xl">
               <NumberTicker
                 value={1.5}
                 decimalPlaces={1}
-                className=" font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
+                className="font-medium tracking-tight whitespace-pre-wrap text-black dark:text-white"
               />
               <p>m+</p>
             </div>
-            <h6 className="text-xl font-semibold">Transactions</h6>
+            <h6 className="text-lg lg:text-xl font-semibold">Transactions</h6>
           </div>
         </div>
       </div>

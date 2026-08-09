@@ -76,11 +76,11 @@ const Overview = () => {
             The Analytics
           </div>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-2 px-60 z-30 pt-8">
+        <div className="w-full flex justify-center items-center flex-col gap-2 px-10 md:px-20 lg:px-60 z-30 pt-8">
           <TextAnimate
             animation="slideUp"
             by="word"
-            className="text-5xl text-primary font-semibold text-center"
+            className="text-3xl md:text-4xl lg:text-5xl text-primary font-semibold text-center leading-8 md:leading-none"
             delay={0.5}
           >
             Discover The Power of Real-Time Financial Insights
@@ -89,7 +89,7 @@ const Overview = () => {
             animation="fadeIn"
             by="line"
             as="p"
-            className="text-xl text-center text-muted"
+            className="text-lg md:text-xl text-center text-muted"
             delay={0.8}
           >
             Stay ahead of your financial goals with intelligent tools that

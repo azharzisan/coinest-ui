@@ -1,21 +1,22 @@
+import FooterLinks from "@/components/ui/FooterLinks";
 import React from "react";
 
 const Footer = () => {
   return (
     <>
-      <footer className="w-full pt-15">
-        <div className="w-full px-20">
-          <div className="w-full flex justify-center items-start gap-20">
+      <footer className="w-full pt-10 lg:pt-15">
+        <div className="w-full px-10 lg:px-20">
+          <div className="w-full flex justify-center items-center flex-col lg:flex-row lg:items-start gap-20 pb-10">
             <div className="w-full">
               <div className="w-full flex justify-start items-center pb-1 -translate-x-3">
                 <img src="/logo.png" alt="" className="w-15" />
                 <h1 className="text-4xl font-bold text-primary">Coinest</h1>
               </div>
-              <p className="text-md text-muted pb-6">
+              <p className="text-md text-muted pb-6 pr-10">
                 We are passionate about helping businesses leverage the power of
                 technology to achieve their goals
               </p>
-              <p className="text-xl text-foreground font-medium pb-1">
+              <p className="text-xl text-primary font-medium pb-1">
                 Join our newsletter
               </p>
               <div className="flex gap-2">
@@ -30,45 +31,15 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full flex justify-end items-center gap-8">
-              <div className="w-full">
-                <h6 className="text-2xl text-primary font-medium pb-1">
-                  Product
-                </h6>
-                <ul className="text-md text-muted cursor-pointer">
-                  <li className="hover:text-foreground">Features</li>
-                  <li className="hover:text-foreground">Pricing</li>
-                  <li className="hover:text-foreground">Integration</li>
-                  <li className="hover:text-foreground">Changelog</li>
-                </ul>
-              </div>
-              <div className="w-full">
-                <h6 className="text-2xl text-primary font-medium pb-1">
-                  Resources
-                </h6>
-                <ul className="text-md text-muted cursor-pointer">
-                  <li className="hover:text-foreground">Docs</li>
-                  <li className="hover:text-foreground">Tutorial</li>
-                  <li className="hover:text-foreground">Blog</li>
-                  <li className="hover:text-foreground">Support</li>
-                </ul>
-              </div>
-              <div className="w-full">
-                <h6 className="text-2xl text-primary font-medium pb-1">
-                  Company
-                </h6>
-                <ul className="text-md text-muted cursor-pointer">
-                  <li className="hover:text-foreground">About</li>
-                  <li className="hover:text-foreground">Careers</li>
-                  <li className="hover:text-foreground">Contact</li>
-                  <li className="hover:text-foreground">Partners</li>
-                </ul>
-              </div>
+            <div className="w-full flex justify-center items-center flex-col sm:flex-row gap-8">
+              <FooterLinks head={"Product"} items={["Features", "Solutions", "Pricing", "Changelog"]}/>
+              <FooterLinks head={"Resources"} items={["Docs", "Tutorial", "Blog", "Support"]}/>
+              <FooterLinks head={"Company"} items={["About", "Careers", "Contact", "Partners"]}/>
             </div>
           </div>
         </div>
 
-        <div className="w-full relative h-105 bg-linear-to-t from-secondary/60 via-secondary/30 to-background overflow-hidden">
+        <div className="w-full relative h-35 sm:h-50 lg:h-90 bg-linear-to-t from-secondary/60 via-secondary/30 to-background overflow-hidden">
           <svg
             version="1.1"
             id="Layer_1"
@@ -80,7 +51,7 @@ const Footer = () => {
             viewBox="0 0 1024 1024"
             enable-background="new 0 0 1024 1024"
             xml:space="preserve"
-            className="absolute -top-30 left-0"
+            className="absolute top-0 sm:-top-20 md:-top-30 left-0"
           >
             <path
               fill="var(--color-primary)"

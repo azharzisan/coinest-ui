@@ -55,11 +55,11 @@ const Features = () => {
             Features
           </div>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-2 px-60 z-30 pt-8">
+        <div className="w-full flex justify-center items-center flex-col gap-2 px-10 md:px-20 lg:px-60 z-30 pt-8">
           <TextAnimate
             animation="slideUp"
             by="word"
-            className="text-5xl text-primary font-semibold text-center"
+            className="text-3xl md:text-4xl lg:text-5xl text-primary font-semibold text-center leading-8 md:leading-none"
             delay={0.5}
           >
             Smarter Features to Manage and Grow your Money
@@ -68,17 +68,17 @@ const Features = () => {
             animation="fadeIn"
             by="line"
             as="p"
-            className="text-xl text-center text-muted"
+            className="text-lg md:text-xl text-center text-muted"
             delay={0.8}
           >
             Everything you need in one platform to track, plan, and optimize
             your finances.
           </TextAnimate>
         </div>
-        <div className="w-full flex justify-center items-start gap-10 px-20 py-10">
-          <div className="w-full sticky top-25 left-0 p-6 bg-secondary/20 rounded-4xl">
-            <img src="/creditcard.svg" alt="" className="w-full pb-6" />
-            <div className="w-full bg-background rounded-2xl border border-muted/30 py-2 px-3">
+        <div className="w-full flex justify-center items-start flex-col md:flex-row md:gap-5 px-5 md:px-10 lg:px-20 py-10">
+          <div className="w-full sticky top-25 left-0 p-2 lg:p-4 bg-secondary/20 rounded-3xl">
+            <img src="/creditcard.svg" alt="" className="w-full pb-2 lg:pb-4" />
+            <div className="w-full bg-background rounded-xl border border-muted/30 py-2 px-3">
               <div className="w-full flex justify-between items-center pb-2 text-foreground">
                 <p className="font-semibold">$2500</p>
                 <p className="text-sm">12.5% spent</p>

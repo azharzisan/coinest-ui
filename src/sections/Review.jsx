@@ -71,17 +71,17 @@ const ReviewCard = ({ img, name, username, body }) => {
 const Review = () => {
   return (
     <>
-      <div className="w-full bg-prim-light py-20">
+      <div className="w-full bg-prim-light py-15 md:py-20">
         <div className="w-full flex justify-center items-center">
           <div className="px-3 py-1 bg-linear-to-t from-secondary/90 to-secondary/40 tracking-tighter border-secondary flex justify-center items-center gap-2 border-[1.5px] rounded-full text-primary ring-1 ring-background/30 ring-inset text-sm font-semibold">
             What they said
           </div>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-2 px-60 z-30 pt-8">
+        <div className="w-full flex justify-center items-center flex-col gap-2 px-10 md:px-20 lg:px-60 z-30 pt-8">
           <TextAnimate
             animation="slideUp"
             by="word"
-            className="text-5xl text-primary font-semibold text-center"
+            className="text-3xl md:text-4xl lg:text-5xl text-primary font-semibold text-center"
             delay={0.5}
           >
             Discover The Power of Real-Time Financial Insights from our users

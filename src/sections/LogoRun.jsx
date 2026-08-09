@@ -31,7 +31,7 @@ const LogoRun = () => {
     ];
   return (
     <>
-      <div className='w-full py-5'>
+      <div className='w-full py-2 lg:py-5'>
         <LogoLoop
           logos={techLogos}
           speed={50}

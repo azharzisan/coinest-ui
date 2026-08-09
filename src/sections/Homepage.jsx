@@ -31,11 +31,11 @@ const Homepage = () => {
           </AnimatedContent>
         </div>
 
-        <div className="w-full flex justify-center items-center flex-col gap-4 px-50 z-30">
+        <div className="w-full flex justify-center items-center flex-col gap-4 px-10 md:px-20 lg:px-50 z-30">
           <TextAnimate
             animation="slideUp"
             by="word"
-            className="text-6xl text-primary font-semibold text-center"
+            className="text-4xl md:text-5xl lg:text-6xl text-primary font-semibold text-center"
             delay={0.5}
           >
             Take Full Control of your Finances with Coinest
@@ -44,7 +44,7 @@ const Homepage = () => {
             animation="fadeIn"
             by="line"
             as="p"
-            className="text-xl text-center text-muted"
+            className="text-lg lg:text-xl text-center text-muted leading-6 lg:leading-none"
             delay={0.8}
           >
             Smart, secure and scalable finance management built for modern
@@ -69,8 +69,8 @@ const Homepage = () => {
             </p>
           </AnimatedContent>
         </div>
-        <div className="w-full h-125 relative z-30 overflow-hidden">
-          <div className="w-full absolute top-0 left-0 pt-15 px-13">
+        <div className="w-full h-70 md:h-100 lg:h-125 relative z-30 overflow-hidden">
+          <div className="w-full absolute top-0 left-0 pt-15 px-3 md:px-10 lg:px-13">
             <AnimatedContent
               distance={50}
               direction="vertical"
