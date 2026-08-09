@@ -17,7 +17,7 @@ const App = () => {
   
   return (
     <>
-      <section className="w-full py-4 px-15 fixed z-10000">
+      <section className="w-full py-4 px-4 lg:px-15 fixed z-10000">
         <Navbar />
       </section>
       <section className="w-full pt-30">
