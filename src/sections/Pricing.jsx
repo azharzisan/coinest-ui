@@ -8,7 +8,7 @@ const Pricing = () => {
   };
   return (
     <>
-      <div className="w-full relative py-20 flex justify-center items-center flex-col">
+      <div id="pricing" className="w-full relative py-20 flex justify-center items-center flex-col">
         <div className="w-full flex justify-center items-center pb-8">
           <div className="px-3 py-1 bg-linear-to-t from-secondary/90 to-secondary/40 tracking-tighter border-secondary flex justify-center items-center gap-2 border-[1.5px] rounded-full text-primary ring-1 ring-background/30 ring-inset text-sm font-semibold">
             Pricing

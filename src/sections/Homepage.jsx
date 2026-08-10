@@ -8,7 +8,7 @@ import React from "react";
 const Homepage = () => {
   return (
     <>
-      <div className="w-full relative">
+      <div id="home" className="w-full relative">
         <div className="w-full flex justify-center items-center pb-10">
           <AnimatedContent
             distance={50}

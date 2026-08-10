@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="w-full">
               <div className="w-full flex justify-start items-center pb-1 -translate-x-3">
                 <img src="/logo.png" alt="" className="w-15" />
-                <h1 className="text-4xl font-bold text-primary">Coinest</h1>
+                <h1 className="text-4xl font-bold text-primary">COINEST</h1>
               </div>
               <p className="text-md text-muted pb-6 pr-10">
                 We are passionate about helping businesses leverage the power of
@@ -44,13 +44,13 @@ const Footer = () => {
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
             x="0px"
             y="0px"
             width="100%"
             viewBox="0 0 1024 1024"
-            enable-background="new 0 0 1024 1024"
-            xml:space="preserve"
+            enableBackground="new 0 0 1024 1024"
+            xmlSpace="preserve"
             className="absolute top-0 sm:-top-20 md:-top-30 left-0"
           >
             <path

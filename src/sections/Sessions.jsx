@@ -68,6 +68,7 @@ const Sessions = () => {
   return (
     <>
       <div
+      id="blog"
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
         className="w-full relative pb-10 cursor-none"
