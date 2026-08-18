@@ -20,7 +20,7 @@ const App = () => {
       <section className="w-full py-4 px-4 lg:px-15 fixed z-10000">
         <Navbar />
       </section>
-      <section className="w-full pt-30">
+      <section className="w-full pt-30 group relative">
         <Homepage />
         <LogoRun />
         <Features />
@@ -33,6 +33,17 @@ const App = () => {
         <Sessions />
         <Ready />
         <Footer />
+
+        <div className="text-sm text-white bg-black z-3000 fixed bottom-5 right-5 px-2 py-0.5 rounded-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Build by{" "}
+          <a
+            href="https://azharzisan.vercel.app"
+            className="underline hover:cursor-pointer hover:text-blue-500"
+            target="_blank"
+          >
+            @azharzisan
+          </a>
+        </div>
       </section>
     </>
   );

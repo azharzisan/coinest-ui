@@ -32,9 +32,18 @@ const Footer = () => {
             </div>
 
             <div className="w-full flex justify-center items-center flex-col sm:flex-row gap-8">
-              <FooterLinks head={"Product"} items={["Features", "Solutions", "Pricing", "Changelog"]}/>
-              <FooterLinks head={"Resources"} items={["Docs", "Tutorial", "Blog", "Support"]}/>
-              <FooterLinks head={"Company"} items={["About", "Careers", "Contact", "Partners"]}/>
+              <FooterLinks
+                head={"Product"}
+                items={["Features", "Solutions", "Pricing", "Changelog"]}
+              />
+              <FooterLinks
+                head={"Resources"}
+                items={["Docs", "Tutorial", "Blog", "Support"]}
+              />
+              <FooterLinks
+                head={"Company"}
+                items={["About", "Careers", "Contact", "Partners"]}
+              />
             </div>
           </div>
         </div>
