@@ -34,7 +34,7 @@ const App = () => {
         <Ready />
         <Footer />
 
-        <div className="text-sm text-white bg-black z-3000 fixed bottom-5 right-5 px-2 py-0.5 rounded-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        <div className="text-sm text-white bg-black z-3000 fixed bottom-5 right-5 px-2 py-0.5 rounded-sm md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 ease-in-out">
           Build by{" "}
           <a
             href="https://azharzisan.vercel.app"
