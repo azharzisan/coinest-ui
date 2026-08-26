@@ -89,12 +89,12 @@ const Review = () => {
         </div>
 
         <div className="relative flex w-full flex-col pt-10 items-center justify-center overflow-hidden">
-          <Marquee pauseOnHover className="[--duration:20s]">
+          <Marquee className="[--duration:20s]">
             {firstRow.map((review) => (
               <ReviewCard key={review.username} {...review} />
             ))}
           </Marquee>
-          <Marquee reverse pauseOnHover className="[--duration:20s]">
+          <Marquee reverse className="[--duration:20s]">
             {secondRow.map((review) => (
               <ReviewCard key={review.username} {...review} />
             ))}
