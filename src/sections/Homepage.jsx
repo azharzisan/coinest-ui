@@ -61,7 +61,7 @@ const Homepage = () => {
             scale={1}
             threshold={0.1}
             delay={1}
-            className=" flex justify-center items-center flex-col"
+            className=" flex justify-center items-center flex-col z-20"
           >
             <Button text={"Get Started for Free"} />
             <p className="text-center text-muted text-xs pt-1">
@@ -92,13 +92,13 @@ const Homepage = () => {
             </AnimatedContent>
           </div>
         </div>
-        <div className="w-full h-full bg-linear-to-t from-secondary/60 via-secondary/30 via-10% to-transparent absolute bottom-0 left-0 -z-10"></div>
+        <div className="w-full h-full bg-linear-to-t from-secondary/60 via-secondary/30 via-10% to-transparent absolute bottom-0 left-0 z-10"></div>
         <HexagonPattern
           radius={40}
           x={-1}
           y={-1}
           className={cn(
-            "mask-[linear-gradient(to_top,white,#ffffff60,transparent)] -z-20",
+            "mask-[linear-gradient(to_top,white,#ffffff60,transparent)] z-10",
           )}
         />
       </div>

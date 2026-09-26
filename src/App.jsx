@@ -20,7 +20,7 @@ const App = () => {
       <section className="w-full py-4 px-4 lg:px-15 fixed z-10000">
         <Navbar />
       </section>
-      <section className="w-full pt-30 group relative">
+      <section className="w-full pt-30 group relative bg-background">
         <Homepage />
         <LogoRun />
         <Features />
